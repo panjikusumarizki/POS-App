@@ -1,0 +1,273 @@
+@font-face {
+    font-family: 'AirbnbCerealApp';
+    src: url('../fonts/AirbnbCereal-Medium.ttf');
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'AirbnbCerealApp' !important;
+}
+
+.navbar {
+    background-color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.navbar img {
+    width: 25px;
+    height: 25px;
+}
+
+.menu {
+    padding-right: 300px;
+    cursor: pointer;
+}
+
+.title {
+    padding-right: 390px;
+}
+
+.title h4 {
+    font-size: 23px;
+    margin-bottom: 0;
+}
+
+.search {
+    padding-right: 20px;
+    border-right: 1px solid rgba(73, 73, 73, 0.2);
+}
+
+.cart {
+    display: flex;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.cart h4 {
+    font-size: 18px;
+    margin-bottom: 0;
+    padding-right: 5px;
+}
+
+.ellips {
+    width: 25px;
+    height: 25px;
+    background-color: #57CAD5;
+    border-radius: 12px;
+    text-align: center;
+    color: #fff;
+}
+
+.left-content {
+    background-color: #fff;
+    padding-top: 32px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.left-menu img {
+    width: 40px;
+    height: 40px;
+}
+
+.fork, .clipboard, .add {
+    padding-bottom: 50px;
+}
+
+.ic-cart {
+    display: none;
+}
+
+.center-content {
+    background-color: rgba(190, 195, 202, 0.3);
+    padding-top: 19px;
+}
+
+.center-content img {
+    width: 220px;
+    height: 170px;
+}
+
+.food-card {
+    margin-bottom: 20px;
+}
+
+.name {
+    font-size: 21px;
+    font-weight: 100;
+    margin-bottom: 0;
+}
+
+.price {
+    font-size: 27px;
+    font-weight: 400;
+    margin-bottom: 0;
+}
+
+.right-content {
+    background-color: #fff;
+    padding-top: 67px;
+    border: 1px solid #CECECE;
+}
+
+.right-content img {
+    width: 150px;
+    height: 150px;
+}
+
+.right-content ul li {
+    list-style: none;
+    text-align: center;
+}
+
+.right-content p {
+    font-size: 13px;
+    color: #CECECE;
+}
+
+@media only screen and (max-width: 992px){
+    .menu {
+        padding: 0;
+    }
+
+    .search {
+        border: 0;
+    }
+
+    .title {
+        padding: 0;
+    }
+
+    .name {
+        font-size: 15px;
+    }
+
+    .price {
+        font-size: 20px;
+    }
+
+    .fork, .clipboard, .add {
+        padding-bottom: 10px;
+    }
+
+    .cart {
+        display: none;
+    }
+
+    .ic-cart {
+        display: flex;
+    }
+
+    .left-content {
+        padding-top: 10px;
+    }
+
+    .left-menu img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cart-span p{
+        width: 20px;
+        height: 20px;
+        background-color: #57CAD5;
+        border-radius: 12px;
+        text-align: center;
+        color: #fff;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .left-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .left-content {
+        display: none;
+        margin-bottom: 0;
+    }
+
+    .fork, .clipboard, .add {
+        padding-bottom: 10px;
+    }
+
+    .cart {
+        display: none;
+    }
+
+    .ic-cart {
+        display: flex;
+    }
+
+    .left-content {
+        padding-top: 10px;
+    }
+
+    .left-menu img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cart-span p{
+        width: 20px;
+        height: 20px;
+        background-color: #57CAD5;
+        border-radius: 12px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .right-content {
+        padding-top: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .left-menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .left-content {
+        display: none;
+        margin-bottom: 0;
+    }
+
+    .fork, .clipboard, .add {
+        padding-bottom: 10px;
+    }
+
+    .cart {
+        display: none;
+    }
+
+    .ic-cart {
+        display: flex;
+    }
+
+    .left-content {
+        padding-top: 10px;
+    }
+
+    .left-menu img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .cart-span p{
+        width: 20px;
+        height: 20px;
+        background-color: #57CAD5;
+        border-radius: 12px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .right-content {
+        padding-top: 0;
+    }
+}

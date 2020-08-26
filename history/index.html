@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css" integrity="sha512-SUJFImtiT87gVCOXl3aGC00zfDl6ggYAw5+oheJvRJ8KBXZrr/TMISSdVJ5bBarbQDRC2pR5Kto3xTR0kpZInA==" crossorigin="anonymous" />
+</head>
+<body>
+  <header>
+    <div class="container-fluid">
+      <nav class="row navbar navbar-expand-lg navbar-light bg-light">  
+        <div class="menu" onclick="myFunction()">
+          <img src="assets/img/menu.png">
+        </div>
+  
+        <div class="title mx-auto">
+          <h4>History</h4>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-1 left-content" id="side-menu">
+            <div class="left-menu">
+              <div class="fork"><img src="assets/img/fork.png"></div>
+              <div class="clipboard"><img src="assets/img/clipboard.png"></div>
+              <div class="add"><img src="assets/img/add.png"></div>
+            </div>
+          </div>
+    
+          <div class="col-md-11 center-content">
+            <div class="row">
+              <div class="col-md-3 my-3 box box-1">
+                <div class="box-content">
+                  <div class="circle">
+                    <img src="assets/img/red-circle.png">
+                  </div>
+                  <div class="box-content">
+                    <p class="box-content-title">Today's Income</p>
+                    <h3 class="box-content-value">Rp. 1.000.000</h3>
+                    <p class="box-content-percent">+2% Yesterday</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-3 my-3 box box-2">
+                <div class="circle">
+                  <img src="assets/img/blue-circle.png">
+                </div>
+                <div class="box-content">
+                  <p class="box-content-title">Orders</p>
+                  <h3 class="box-content-value">3.270</h3>
+                  <p class="box-content-percent">+5% Last Week</p>
+                </div>
+              </div>
+
+
+              <div class="col-md-3 my-3 box box-3">
+                <div class="circle">
+                  <img src="assets/img/purple-circle.png">
+                </div>
+                <div class="box-content">
+                  <p class="box-content-title">This Year's Income</p>
+                  <h3 class="box-content-value">Rp. 100.000.000.000</h3>
+                  <p class="box-content-percent">+10% Last Year</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-11 charts">
+              <div class="ch-revenue">
+                <div class="revenue">Revenue</div>
+                <div class="month-wrapper">
+                  <div class="month">
+                    <p>Month</p>
+                    <div class="drop-img">
+                      <img src="assets//img/arrow.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <canvas id="myChart" width="400" height="150"></canvas>
+            </div>
+            
+            <div class="col-md-11 order-table">
+              <div class="ch-order">
+                <div class="recent">Recent Order</div>
+                <div class="day-wrapper">
+                  <div class="today">
+                    <p>Today</p>
+                    <div class="drop-img">
+                      <img src="assets//img/arrow.png">
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <table class="table text-center">
+                <tr class="col-12">
+                  <th>INVOICES</th>
+                  <th>CASHIER</th>
+                  <th>DATE</th>
+                  <th>ORDERS</th>
+                  <th>AMOUNT</th>
+                </tr>
+                
+                <tr>
+                  <td>#10928</td>
+                  <td>Cashier 1</td>
+                  <td>06 October 2019</td>
+                  <td>Ice Tea, Salad With Peanut</td>
+                  <td>Rp. 120.000</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function myFunction() {
+      let x = document.getElementById("side-menu");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js" integrity="sha512-QEiC894KVkN9Tsoi6+mKf8HaCLJvyA6QIRzY5KrfINXYuP9NxdIkRQhGq3BZi0J4I7V5SidGM3XUQ5wFiMDuWg==" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script src="assets/js/chart.js"></script>
+</body>
+</html>

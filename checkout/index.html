@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+<body>
+  <header>
+    <div class="container-fluid">
+      <nav class="row navbar navbar-expand-lg d-flex navbar-light bg-light">
+        <div class="menu" onclick="myFunction()">
+          <img src="assets/img/menu.png">
+        </div>
+  
+        <div class="title">
+          <h4>Food Items</h4>
+        </div>
+  
+        <div class="search">
+          <img src="assets/img/magnifying-glass.png">
+        </div>
+
+        <div class="cart mx-auto">
+          <h4>Cart </h4>
+          <span class="ellips"><h5>3</h5></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-1 left-content" id="side-menu">
+            <div class="left-menu">
+              <div class="fork"><img src="assets/img/fork.png"></div>
+              <div class="clipboard"><img src="assets/img/clipboard.png"></div>
+              <div class="add"><img src="assets/img/add.png"></div>
+              <div class="ic-cart"><img src="assets/img/cart.png"> <span class="cart-span"><p>3</p></span></div>
+            </div>
+          </div>
+    
+          <div class="col-md-7 center-content">
+            <div class="row">
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <img src="assets/img/espresso.png">
+                <p class="name">Espresso</p>
+                <p class="price">Rp. 10.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <div class="latte">
+                  <div class="select">
+                    <img src="assets/img/tick.png">
+                  </div>
+                </div>
+                <p class="name">Coffe Latte</p>
+                <p class="price">Rp. 15.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <img src="assets/img/cappucino.png">
+                <p class="name">Cappucino</p>
+                <p class="price">Rp. 5.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <img src="assets/img/red-velvet.png">
+                <p class="name">Red Velvet Latte</p>
+                <p class="price">Rp. 33.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <img src="assets/img/choco-rhum.png">
+                <p class="name">Choco Rhum</p>
+                <p class="price">Rp. 28.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <div class="forest">
+                  <div class="select">
+                    <img src="assets/img/tick.png">
+                  </div>
+                </div>
+                <p class="name">Black Forest</p>
+                <p class="price">Rp. 30.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <img src="assets/img/chicken-katsu.png">
+                <p class="name">Chicken Katsu Dabu-dabu</p>
+                <p class="price">Rp. 60.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <div class="salmon">
+                  <div class="select">
+                    <img src="assets/img/tick.png">
+                  </div>
+                </div>
+                <p class="name">Salmon Truffle Teriyaki</p>
+                <p class="price">Rp. 60.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <img src="assets/img/wiener.png">
+                <p class="name">Wiener Schnitzel</p>
+                <p class="price">Rp. 69.000</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 right-content">
+            <div class="cart-select">
+              <img src="assets/img/latte.png">
+              <div class="side">
+                <h4>Coffee Latte</h4>
+                <div class="btn-qty">
+                  <div class="button">-</div>
+                  <div class="button number">1</div>
+                  <div class="button">+</div>
+                </div>
+              </div>
+              <div class="price-item text-right">Rp. 15.000</div>
+            </div>
+
+            <div class="cart-select">
+              <img src="assets/img/blackforest.png">
+              <div class="side">
+                <h4>Black Forest</h4>
+                <div class="btn-qty">
+                  <div class="button">-</div>
+                  <div class="button number">1</div>
+                  <div class="button">+</div>
+                </div>
+              </div>
+              <div class="price-item text-right">Rp. 30.000</div>
+            </div>
+
+            <div class="cart-select">
+              <img src="assets/img/salmon.png">
+              <div class="side">
+                <h4>Salmon Truffle</h4>
+                <div class="btn-qty">
+                  <div class="button">-</div>
+                  <div class="button number">1</div>
+                  <div class="button">+</div>
+                </div>
+              </div>
+              <div class="price-item text-right">Rp. 60.000</div>
+            </div>
+
+            <div>
+              <a href="#" class="btn btn-block btn-checkout py-3" data-toggle="modal" data-target="#checkout-modal">Checkout</a>
+            </div>
+
+            <div>
+              <a href="#" class="btn btn-block btn-cancel mt-3 py-3">Cancel</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="checkout-modal" tabindex="-1" aria-labelledby="checkoutModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <table>
+                  <tr>
+                    <th class="co-title">Checkout</th>
+                    <td class="text-right" style="font-size: 18px;">Receipt no: #010410919</td>
+                  </tr>
+                </table>
+                <h4 style="margin-bottom: 55px;">Cashier: Pevita Pearce</h4>
+
+                <table class="details">
+                  <tr>
+                    <th>Coffee Latte 1x</th>
+                    <td class="text-right price-detail">Rp. 15.000</td>
+                  </tr>
+
+                  <tr>
+                    <th>Black Forest 1x</th>
+                    <td class="text-right price-detail">Rp. 30.000</td>
+                  </tr>
+
+                  <tr>
+                    <th>Salmon Truffle Teriyaki 1x</th>
+                    <td class="text-right price-detail">Rp. 60.000</td>
+                  </tr>
+
+                  <tr>
+                    <th>PPn 10%</th>
+                    <td class="text-right price-detail">Rp. 10.500</td>
+                  </tr>
+                </table>
+
+                <h4 class="text-right total-price" style="margin-top: 20px;">Total : Rp. 115.000</h4>
+
+                <div class="payment"><h4>Payment: Cash</h4></div>
+
+                <div>
+                  <a href="#" class="btn btn-block btn-print mt-3 py-3">Print</a>
+                </div>
+
+                <div class="or">Or</div>
+
+                <div>
+                  <a href="#" class="btn btn-block btn-send mt-3 py-3">Send Email</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function myFunction() {
+      let x = document.getElementById("side-menu");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>

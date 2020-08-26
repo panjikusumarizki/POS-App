@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Data</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/style/style.css">
+</head>
+<body>
+  <header>
+    <div class="container-fluid">
+      <nav class="row navbar navbar-expand-lg navbar-light bg-light">
+        <div class="menu" onclick="myFunction()">
+          <img src="assets/img/menu.png">
+        </div>
+  
+        <div class="title">
+          <h4>Food Items</h4>
+        </div>
+  
+        <div class="search">
+          <img src="assets/img/magnifying-glass.png">
+        </div>
+
+        <div class="cart mx-auto">
+          <h4>Cart </h4>
+          <span class="ellips"><h5>0</h5></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <div class="content">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-sm-1 left-content" id="side-menu">
+            <div class="left-menu">
+              <div class="fork"><img src="assets/img/fork.png"></div>
+              <div class="clipboard"><img src="assets/img/clipboard.png"></div>
+              <div class="add" data-toggle="modal" data-target="#add-modal"><img src="assets/img/add.png"></div>
+              <div class="ic-cart"><img src="assets/img/cart.png"> <span class="cart-span"><p>0</p></span></div>
+            </div>
+          </div>
+    
+          <div class="col-md-7 center-content">
+            <div class="row">
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <img src="assets/img/espresso.png">
+                <p class="name">Espresso</p>
+                <p class="price">Rp. 10.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <img src="assets/img/latte.png">
+                <p class="name">Coffe Latte</p>
+                <p class="price">Rp. 15.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <img src="assets/img/cappucino.png">
+                <p class="name">Cappucino</p>
+                <p class="price">Rp. 5.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <img src="assets/img/red-velvet.png">
+                <p class="name">Red Velvet Latte</p>
+                <p class="price">Rp. 33.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <img src="assets/img/choco-rhum.png">
+                <p class="name">Choco Rhum</p>
+                <p class="price">Rp. 28.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <img src="assets/img/blackforest.png">
+                <p class="name">Black Forest</p>
+                <p class="price">Rp. 30.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <img src="assets/img/chicken-katsu.png">
+                <p class="name">Chicken Katsu Dabu-dabu</p>
+                <p class="price">Rp. 60.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <img src="assets/img/salmon.png">
+                <p class="name">Salmon Truffle Teriyaki</p>
+                <p class="price">Rp. 60.000</p>
+              </div>
+
+              <div class="col-6 col-sm-4 col-md-6 col-lg-4 food-card">
+                <img src="assets/img/wiener.png">
+                <p class="name">Wiener Schnitzel</p>
+                <p class="price">Rp. 69.000</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-4 right-content">
+            <ul>
+              <li><img src="assets/img/food-and-restaurant.png"></li>
+              <li><h5>Your cart is empty</h5></li>
+              <li><p>Please add some item from the menu</p></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="modal fade" id="add-modal" tabindex="-1" aria-labelledby="addModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body">
+                <h4>Add Item</h4>
+
+                <form class="form first-form">
+                  <div class="form-group row">
+                    <label for="inputName" class="col-sm-2 col-form-label">Name</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control input-fom" id="inputName">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="inputImage" class="col-sm-2 col-form-label">Image</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control input-fom" id="inputImage">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="inputPrice" class="col-sm-2 col-form-label">Price</label>
+                    <div class="col-sm-7">
+                      <input type="text" class="form-control input-fom" id="inputPrice">
+                    </div>
+                  </div>
+
+                  <div class="form-group row">
+                    <label for="category" class="col-sm-2 col-form-label">Category</label>
+                    <div class="input-group col-sm-5">
+                      <input type="text" class="form-control input-fom ctg-input" placeholder="Category">
+                      <span class="input-group-append">
+                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></button>
+                      </span>
+                    </div>
+                  </div>
+                </form>
+
+                <div class="two-button">
+                  <div>
+                    <a href="#" class="btn btn-cancel" data-dismiss="modal">Cancel</a>
+                  </div>
+                  <div>
+                    <a href="#" class="btn btn-add">Add</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <script>
+    function myFunction() {
+      let x = document.getElementById("side-menu");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+  </script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</body>
+</html>
