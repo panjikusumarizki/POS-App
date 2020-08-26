@@ -1,4 +1,4 @@
-# Tugas HTML dan CSS
+# Projek Tugas HTML dan CSS
 
 Repository ini berisi projek tugas dari materi html dan css, dalam tugas ini saya diminta untuk membuat 5 halaman website, diantaranya:
 1. Halaman Home.
