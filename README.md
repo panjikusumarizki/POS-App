@@ -16,8 +16,8 @@ Berikut ini penjelasan tentang penggunaan masing-masing halaman:
 
 Hasil dari tugas ini di deploy ke netlify, berikut saya cantumkan untuk link halaman websitenya:
 1. Home: https://posapphome.netlify.app/
-2. Home Select: https://posapphomeselect.netlify.app/
-3. Checkout: https://posappcheckout.netlify.app/
+2. Home Select: https://stupefied-tereshkova-2194bd.netlify.app/
+3. Checkout: https://keen-jennings-d7b31d.netlify.app/
 4. Add Data: https://posappadd-data.netlify.app/
 5. History: https://posapphistory.netlify.app/
 
